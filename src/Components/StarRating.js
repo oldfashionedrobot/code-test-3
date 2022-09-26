@@ -1,3 +1,5 @@
+import styles from "../Styles/StarRating.module.css";
+
 export default function StarRating({ rating }) {
   let ratingStr = "N/A";
 
@@ -9,5 +11,5 @@ export default function StarRating({ rating }) {
     ratingStr = stars.join("");
   }
 
-  return <strong>{ratingStr} </strong>;
+  return <strong className={styles.stars}>{ratingStr} </strong>;
 }

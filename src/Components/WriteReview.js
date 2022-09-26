@@ -48,13 +48,6 @@ export default function WriteReview({ product, onReviewSubmit }) {
         onChange={(e) => setName(e.target.value)}
         type="text"
       />
-      <label className={styles.formLabel}>Headline:</label>
-      <input
-        className={styles.formInput}
-        value={headline}
-        onChange={(e) => setHeadline(e.target.value)}
-        type="text"
-      />
       <label className={styles.formLabel}>Star Rating:</label>
       <input
         className={styles.formInput}
@@ -64,6 +57,14 @@ export default function WriteReview({ product, onReviewSubmit }) {
         min="0"
         max="5"
       />
+      <label className={styles.formLabel}>Headline:</label>
+      <input
+        className={styles.formInput}
+        value={headline}
+        onChange={(e) => setHeadline(e.target.value)}
+        type="text"
+      />
+
       <label className={styles.formLabel}>Body:</label>
       <textarea
         className={styles.formInput}
@@ -71,15 +72,18 @@ export default function WriteReview({ product, onReviewSubmit }) {
         onChange={(e) => setBody(e.target.value)}
       ></textarea>
       <br></br>
-      <input type="submit" value="Submit" />
+      <input className={styles.btn} type="submit" value="Submit" />
     </form>
   );
 
   const link =
     formOpen === false ? (
-      <a href="" onClick={(e) => toggleView(e)}>
-        Write a Review
-      </a>
+      <>
+        <a href="" onClick={(e) => toggleView(e)}>
+          Write a Review
+        </a>
+        <p>Share your opinion about this product.</p>
+      </>
     ) : (
       <a href="" onClick={(e) => clearForm(e)}>
         Cancel
@@ -88,10 +92,10 @@ export default function WriteReview({ product, onReviewSubmit }) {
 
   return (
     <>
-      <h4>
+      <div className={styles.wrapper}>
         {link}
         {formOpen ? form : ""}
-      </h4>
+      </div>
     </>
   );
 }

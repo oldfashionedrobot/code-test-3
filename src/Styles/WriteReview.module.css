@@ -1,7 +1,29 @@
 .formLabel {
   display: block;
+  font-weight: bold;
 }
 
 .formInput {
   width: 250px;
+  border: 1px solid #dbc58b;
+}
+
+.wrapper {
+  padding: 24px;
+  background: white;
+}
+
+.btn {
+  background-color: #dbc58b;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: 2px solid #dbc58b;
+  transition: background-color 0.2s ease-in;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #dbc58b;
+  background-color: white;
 }

@@ -1,0 +1,18 @@
+.card {
+  padding: 24px;
+  background: white;
+}
+
+.card img {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.textBody {
+  word-break: break-all;
+}

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { getReviewsForProduct, getProductById } from "../Utils/api-helpers";
+import styles from "../Styles/Reviews.module.css";
 import ProductCard from "./ProductCard";
 import ReviewCard from "./ReviewCard";
 import WriteReview from "./WriteReview";
@@ -50,17 +51,19 @@ export default function Reviews() {
       <Link to="/">Back to Home</Link>
       <h1>Reviews</h1>
       <p>View all reviews for:</p>
-      <ProductCard
-        product={product}
-        rating={rating}
-        showLink={false}
-      ></ProductCard>
-
-      <WriteReview
-        product={product}
-        onReviewSubmit={(e) => renderNewReview(e)}
-      ></WriteReview>
-      <ul>{reviewContent}</ul>
+      <div className={styles.productInfo}>
+        <ProductCard
+          product={product}
+          rating={rating}
+          showLink={false}
+        ></ProductCard>
+        <WriteReview
+          product={product}
+          onReviewSubmit={(e) => renderNewReview(e)}
+        ></WriteReview>
+      </div>
+      <h2>All Previous Reviews</h2>
+      <ul className={styles.reviewList}>{reviewContent}</ul>
     </>
   );
 }
