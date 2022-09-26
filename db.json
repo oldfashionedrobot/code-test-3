@@ -1,0 +1,78 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "name": "Velvet Sofa"
+    },
+    {
+      "id": 1,
+      "name": "Fancy Armchair"
+    },
+    {
+      "id": 2,
+      "name": "Plain Bed"
+    },
+    {
+      "id": 3,
+      "name": "Huge Rug"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "author": "Oliver",
+      "star_rating": 5,
+      "headline": "I love this product!",
+      "body": "This sofa has completely changed my life. The delivery process couldn't have been easier. I want to sing about Oliver Space from the rooftops!",
+      "productId": "0"
+    },
+    {
+      "author": "new",
+      "star_rating": 5,
+      "headline": "Love it",
+      "body": "Would rent this dining room table one hundred times over.",
+      "productId": "0",
+      "id": 2
+    },
+    {
+      "author": "Sanjeev",
+      "star_rating": 2,
+      "headline": "Not that soft",
+      "body": "Sofa needs to be more soft",
+      "productId": "0",
+      "id": 3
+    },
+    {
+      "author": "fsdfdsfsd",
+      "star_rating": 0,
+      "headline": "fsdfdsfsdf",
+      "body": "sdfsdfdsfdsf",
+      "productId": "0",
+      "id": 4
+    },
+    {
+      "author": "Sanjeev",
+      "star_rating": 2,
+      "headline": "Too Plain",
+      "body": "Kind of comfy, but just too plain",
+      "productId": "2",
+      "id": 5
+    },
+    {
+      "author": "Sanjeev",
+      "star_rating": 4,
+      "headline": "Could be more fancy",
+      "body": "Pretty fancy, but could use some more fancyness. 4 stars.",
+      "productId": "1",
+      "id": 6
+    },
+    {
+      "author": "Derek",
+      "star_rating": 0,
+      "headline": "Huge? More like tiny",
+      "body": "This rug needs to be at least 3 times bigger.",
+      "productId": "3",
+      "id": 7
+    }
+  ]
+}
